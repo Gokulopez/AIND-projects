@@ -5,20 +5,20 @@
 
 ## Synopsis
 
-In this project, students will develop an adversarial search agent to play the game "Isolation".  Isolation is a deterministic, two-player game of perfect information in which the players alternate turns moving a single piece from one cell to another on a board.  Whenever either player occupies a cell, that cell becomes blocked for the remainder of the game.  The first player with no remaining legal moves loses, and the opponent is declared the winner.  These rules are implemented in the `isolation.Board` class provided in the repository. 
+In this project, I develop an adversarial search agent to play the game "Isolation".  Isolation is a deterministic, two-player game of perfect information in which the players alternate turns moving a single piece from one cell to another on a board.  Whenever either player occupies a cell, that cell becomes blocked for the remainder of the game.  The first player with no remaining legal moves loses, and the opponent is declared the winner.  These rules are implemented in the `isolation.Board` class provided in the repository. 
 
 This project uses a version of Isolation where each agent is restricted to L-shaped movements (like a knight in chess) on a rectangular grid (like a chess or checkerboard).  The agents can move to any open cell on the board that is 2-rows and 1-column or 2-columns and 1-row away from their current position on the board. Movements are blocked at the edges of the board (the board does not wrap around), however, the player can "jump" blocked or occupied spaces (just like a knight in chess).
 
 Additionally, agents will have a fixed time limit each turn to search for the best move and respond.  If the time limit expires during a player's turn, that player forfeits the match, and the opponent wins.
 
-Students only need to modify code in the `game_agent.py` file to complete the project.  Additional files include example Player and evaluation functions, the game board class, and a template to develop local unit tests.  
+The code in the `game_agent.py` file is the only file I modified to complete the project.  Additional files include example Player and evaluation functions, the game board class, and a template to develop local unit tests.  
 
 
-## Instructions
+## What I did
 
-In order to complete the Isolation project, students must submit code that passes all test cases for the required functions in `game_agent.py` and complete a report as specified in the rubric.  Students can submit using the [Udacity Project Assistant]() command line utility.  Students will receive feedback on test case success/failure after each submission.
+In order to complete the Isolation project, I had to submit code that passed all test cases for the required functions in `game_agent.py` and complete a report as specified in the rubric.  This project was submited and passed with a great review.
 
-Students must implement the following functions:
+I implemented the following functions:
 
 - `MinimaxPlayer.minimax()`: implement minimax search
 - `AlphaBetaPlayer.alphabeta()`: implement minimax search with alpha-beta pruning
@@ -27,7 +27,7 @@ Students must implement the following functions:
 - `custom_score_2()`: implement your own alternate position evaluation heuristic
 - `custom_score_3()`: implement your own alternate position evaluation heuristic
 
-You may write or modify code within each file (but you must maintain compatibility with the function signatures provided).  You may add other classes, functions, etc., as needed, but it is not required.
+I was allowed to write or modify code within each file (but maintain compatibility with the function signatures provided). I was allowed to add other classes, functions, etc., as needed, but it was is not required.
 
 The Project Assistant sandbox for this project places some restrictions on the modules available and blocks calls to some of the standard library functions.  In general, standard library functions that introspect code running in the sandbox are blocked, and the PA only allows the following modules `random`, `numpy`, `scipy`, `sklearn`, `itertools`, `math`, `heapq`, `collections`, `array`, `copy`, and `operator`. (Modules within these packages are also allowed, e.g., `numpy.random`.)
 
@@ -74,7 +74,7 @@ The following example creates a game and illustrates the basic API.  You can run
     print("Move history:\n{!s}".format(history))
 
 
-### Coding
+### Coding 
 
 The steps below outline a suggested process for completing the project -- however, this is just a suggestion to help you get started.  A stub for writing unit tests is provided in the `agent_test.py` file (no local test cases are provided). (See the [unittest](https://docs.python.org/3/library/unittest.html#basic-example) module for information on getting started.)
 
@@ -112,16 +112,6 @@ The tournament opponents are listed below. (See also: sample heuristics and play
 - AB_Open: AlphaBetaPlayer using iterative deepening alpha-beta search and the open_move_score heuristic
 - AB_Center: AlphaBetaPlayer using iterative deepening alpha-beta search and the center_score heuristic
 - AB_Improved: AlphaBetaPlayer using iterative deepening alpha-beta search and the improved_score heuristic
-
-## Submission
-
-Before submitting your solution to a reviewer, you are required to submit your project to Udacity's Project Assistant, which will provide some initial feedback.
-
-Please see the instructions in the [AIND-Sudoku](https://github.com/udacity/AIND-Sudoku#submission) project repository for installation and setup instructions. 
-
-To submit your code to the project assistant, run `udacity submit isolation` from within the top-level directory of this project. You will be prompted for a username and password. If you login using google or facebook, follow the [instructions for using a jwt](https://project-assistant.udacity.com/faq).
-
-This process will create a zipfile in your top-level directory named `isolation-<id>.zip`. This is the file that you should submit to the Udacity reviews system.
 
 
 ## Game Visualization
