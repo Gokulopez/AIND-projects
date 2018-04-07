@@ -1,2 +1,2 @@
-# AIND-Isolation
-This is my Isolation Project for my Artificial Intelligence course at Udacity.  
+# AIND-Projects
+Artificial Intelligence projects for my course at Udacity.  
